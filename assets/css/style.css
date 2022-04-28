@@ -45,6 +45,7 @@ body {
     color: #ffffff;
     padding: 8.5px 10px;
     transition: all .15s ease-in-out;
+    cursor: pointer;
 }
 
 /* ref: csstricks.com */
@@ -61,3 +62,17 @@ body {
     background-color: #D2042D;
 }
 
+.control-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.1rem;
+    padding: 7.55px 45px;
+}
+
+.hide {
+    display: none;
+}
