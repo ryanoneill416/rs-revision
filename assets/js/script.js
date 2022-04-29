@@ -1,6 +1,11 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementByID('next-btn');
 const optionButtonElements = document.getElementById('option-buttons');
+const signPlaceholder = document.getElementById('sign-holder');
+const questionContainer = document.getElementById('question-container');
+
+let randomizedSigns;
+let currentSign;
 
 const roadSigns = [
     {
@@ -13,3 +18,19 @@ const roadSigns = [
         ]
     }
 ]
+
+function startQuiz() {
+
+}
+
+function setNextSign() {
+
+}
+
+function showSign(roadSign) {
+
+}
+
+function selectAnswer() {
+    
+}
