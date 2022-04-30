@@ -17,11 +17,22 @@ body {
     width: 100vw;
     color: #101010;
     position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 1.1rem;
+    color: whitesmoke;
 }
 
 /* Quiz area styling */
 .container {
-    background-color: #ffffff;
+    background-color: whitesmoke;
     position: absolute;
     top: 20%;
     width: 750px;
