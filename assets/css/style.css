@@ -55,10 +55,12 @@ body {
 }
 
 .btn.correct {
+    transition: all .6s ease-in-out;
     background-color: #228B22;
 }
 
 .btn.wrong {
+    transition: all .6s ease-in-out;
     background-color: #D2042D;
 }
 

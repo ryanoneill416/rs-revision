@@ -36,7 +36,7 @@ nextButton.addEventListener('click', () => {
 })
 
 /**
- * The main game function which triggers the quiz to start when the useer selects the 'Start' button
+ * The main game function which triggers the quiz to start when the user selects the 'Start' button
  */
 function startQuiz() {
     startButton.classList.add('hide');
@@ -46,6 +46,10 @@ function startQuiz() {
     setNextSign();
 }
 
+/**
+ * The function the option buttons of the previous question 
+ * Also presents the next road sign
+ */
 function setNextSign() {
     resetOptions();
     showSign(randomizedSigns[currentSign]);
@@ -78,6 +82,9 @@ function showSign(roadSign) {
 function selectAnswer(e) {
     const selectedOption = e.target;
     const correct = selectedOption.dataset.correct;
+    Array.from(optionButtonElements.children).forEach(button => {
+        changeOptionColor(button, button.dataset.correct);
+    })
     if (randomizedSigns.length > currentSign + 1) {
         nextButton.classList.remove('hide');
     } else {
@@ -93,6 +100,14 @@ function selectAnswer(e) {
 function resetOptions() {
     while (optionButtonElements.firstChild) {
         optionButtonElements.removeChild(optionButtonElements.firstChild);
+    }
+}
+
+function changeOptionColor(element, correct) {
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
     }
 }
 
