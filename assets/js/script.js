@@ -12,9 +12,18 @@ const roadSigns = [
         sign: 'Sign 1',
         options: [
             {text: 'OptionA', correct: true},
-            {text: 'OptionB', correct: true},
-            {text: 'OptionC', correct: true},
-            {text: 'OptionD', correct: true},
+            {text: 'OptionB', correct: false},
+            {text: 'OptionC', correct: false},
+            {text: 'OptionD', correct: false},
+        ]
+    },
+    {
+        sign: 'Sign 2',
+        options: [
+            {text: 'OptionAA', correct: false},
+            {text: 'OptionBA', correct: true},
+            {text: 'OptionCA', correct: false},
+            {text: 'OptionDA', correct: false}
         ]
     }
 ]
@@ -61,10 +70,29 @@ function showSign(roadSign) {
     });
 }
 
-function selectAnswer() {
-
+/**
+ * Adds selection function to option button
+ * When the last question is answered the user will be provided with option of trying again
+ * Similarly the next button will be removed
+ */
+function selectAnswer(e) {
+    const selectedOption = e.target;
+    const correct = selectedOption.dataset.correct;
+    if (randomizedSigns.length > currentSign + 1) {
+        nextButton.classList.remove('hide');
+    } else {
+        startButton.classList.remove('hide');
+        startButton.innerText = 'Try Again';
+        nextButton.classList.add('hide');
+    }
 }
 
+/**
+ * Removes previously added option buttons irrelevant to current question
+ */
 function resetOptions() {
-
+    while (optionButtonElements.firstChild) {
+        optionButtonElements.removeChild(optionButtonElements.firstChild);
+    }
 }
+
