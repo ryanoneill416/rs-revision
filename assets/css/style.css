@@ -21,12 +21,15 @@ body {
 }
 
 h1 {
+    font-family: 'Oswald';
     font-size: 3rem;
+    letter-spacing: .1rem;
     color: whitesmoke;
+    text-shadow: 3px 3px 3px #000000;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: whitesmoke;
 }
 
@@ -45,6 +48,14 @@ p {
     border-radius: 5px;
     padding: 25px; 
     box-shadow: 0px 0px 15px 6px #000000;
+}
+
+#sign-holder {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin: auto;
 }
 
 .option-grid {

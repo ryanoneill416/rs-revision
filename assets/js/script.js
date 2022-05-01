@@ -90,7 +90,7 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide');
     } else {
         startButton.classList.remove('hide');
-        startButton.innerText = 'Try Again';
+        startButton.innerText = 'Restart Quiz';
         nextButton.classList.add('hide');
     }
 }
