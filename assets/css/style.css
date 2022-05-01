@@ -16,7 +16,6 @@ body {
     height: 100vh;
     width: 100vw;
     color: #101010;
-    /* position: relative; */
     text-align: center;
 }
 
@@ -26,11 +25,14 @@ h1 {
     letter-spacing: .1rem;
     color: whitesmoke;
     text-shadow: 3px 3px 3px #000000;
+    margin: 2rem;
+    padding-top: 1rem;
 }
 
 p {
     font-size: 1.15rem;
     color: whitesmoke;
+    margin: 1rem;
 }
 
 /* Quiz area styling */
