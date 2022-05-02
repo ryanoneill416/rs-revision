@@ -4,6 +4,7 @@ const optionButtonElements = document.getElementById('option-buttons');
 const signPlaceholder = document.getElementById('sign-holder');
 const questionContainer = document.getElementById('question-container');
 const homeButton = document.getElementById('home-btn');
+const mainMenu = document.getElementById('main-menu');
 
 let randomizedSigns;
 let currentSign;
@@ -41,6 +42,7 @@ nextButton.addEventListener('click', () => {
  */
 function startQuiz() {
     startButton.classList.add('hide');
+    mainMenu.classList.add('hide');
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
     currentSign = 0;
     questionContainer.classList.remove('hide');

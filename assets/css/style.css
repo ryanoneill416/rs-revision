@@ -29,6 +29,14 @@ h1 {
     padding-top: 1rem;
 }
 
+h2 {
+    font-family: 'Oswald';
+    font-size: 3rem;
+    color: #f28500;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
 p {
     font-size: 1.15rem;
     color: whitesmoke;
