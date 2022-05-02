@@ -108,7 +108,7 @@ p {
     align-items: center;
 }
 
-.start-btn, .next-btn, .home-btn {
+.start-btn, .next-btn, .home-btn, .study-btn {
     font-size: 1.1rem;
     padding: .75rem 0px;
     margin: 7.5px 0;

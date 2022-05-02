@@ -5,6 +5,7 @@ const signPlaceholder = document.getElementById('sign-holder');
 const questionContainer = document.getElementById('question-container');
 const homeButton = document.getElementById('home-btn');
 const mainMenu = document.getElementById('main-menu');
+const studyButton = document.getElementById('revision');
 
 let randomizedSigns;
 let currentSign;
@@ -43,6 +44,7 @@ nextButton.addEventListener('click', () => {
 function startQuiz() {
     startButton.classList.add('hide');
     mainMenu.classList.add('hide');
+    studyButton.classList.add('hide')
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
     currentSign = 0;
     questionContainer.classList.remove('hide');
@@ -111,6 +113,9 @@ function resetOptions() {
     }
 }
 
+/**
+ * Changes color of option buttons after selection to show the correct/incorrect values
+ */
 function changeOptionColor(element, correct) {
     if (correct) {
         element.classList.add('correct');
