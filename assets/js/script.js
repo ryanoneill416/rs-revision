@@ -78,6 +78,7 @@ function showSign(roadSign) {
         optionButtonElements.appendChild(button);
     });
     nextButton.classList.add('hide');
+    homeButton.classList.add('hide')
 }
 
 /**
