@@ -44,7 +44,7 @@ p {
 .container {
     background-color: whitesmoke;
     position: absolute;
-    top: 20%;
+    top: 300px;
     width: 750px;
     max-width: 80%;
     border-radius: 5px;
@@ -71,7 +71,7 @@ p {
 .btn {
     background-color: #f28500;
     border: .5px solid #cc7000;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #ffffff;
     padding: 1rem 0px;
     transition: all .15s ease-in-out;
@@ -100,9 +100,15 @@ p {
     align-items: center;
 }
 
-.start-btn, .next-btn {
+.start-btn, .next-btn, .home-btn {
     font-size: 1.1rem;
-    padding: .75rem 90px;
+    padding: .75rem 0px;
+    margin: 7.5px 0;
+    width: 300px;
+}
+
+.game-btn {
+    width: 200px;
 }
 
 .hide {

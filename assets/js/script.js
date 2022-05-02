@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn');
 const optionButtonElements = document.getElementById('option-buttons');
 const signPlaceholder = document.getElementById('sign-holder');
 const questionContainer = document.getElementById('question-container');
+const homeButton = document.getElementById('home-btn');
 
 let randomizedSigns;
 let currentSign;
@@ -92,7 +93,11 @@ function selectAnswer(e) {
         startButton.classList.remove('hide');
         startButton.innerText = 'Restart Quiz';
         nextButton.classList.add('hide');
+        homeButton.classList.remove('hide');
     }
+    nextButton.classList.add('game-btn');
+    startButton.classList.add('game-btn');
+    homeButton.classList.add('game-btn');
 }
 
 /**
