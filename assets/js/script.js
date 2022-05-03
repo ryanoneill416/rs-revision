@@ -6,27 +6,55 @@ const questionContainer = document.getElementById('question-container');
 const homeButton = document.getElementById('home-btn');
 const mainMenu = document.getElementById('main-menu');
 const studyButton = document.getElementById('revision');
-
+const scoreboard = document.getElementById('score');
 let randomizedSigns;
 let currentSign;
+let score = 0
 
 const roadSigns = [
     {
         sign: 'Sign 1',
         options: [
-            {text: 'OptionA', correct: true},
-            {text: 'OptionB', correct: false},
-            {text: 'OptionC', correct: false},
-            {text: 'OptionD', correct: false},
+            {text: 'OptionAa', correct: true},
+            {text: 'OptionBa', correct: false},
+            {text: 'OptionCa', correct: false},
+            {text: 'OptionDa', correct: false},
         ]
     },
     {
         sign: 'Sign 2',
         options: [
-            {text: 'OptionAA', correct: false},
-            {text: 'OptionBA', correct: true},
-            {text: 'OptionCA', correct: false},
-            {text: 'OptionDA', correct: false}
+            {text: 'OptionAb', correct: true},
+            {text: 'OptionBb', correct: false},
+            {text: 'OptionCb', correct: false},
+            {text: 'OptionDb', correct: false},
+        ]
+    },
+    {
+        sign: 'Sign 3',
+        options: [
+            {text: 'OptionAc', correct: true},
+            {text: 'OptionBc', correct: false},
+            {text: 'OptionCc', correct: false},
+            {text: 'OptionDc', correct: false},
+        ]
+    },
+    {
+        sign: 'Sign 4',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'Sign 5',
+        options: [
+            {text: 'OptionAe', correct: true},
+            {text: 'OptionBe', correct: false},
+            {text: 'OptionCe', correct: false},
+            {text: 'OptionDe', correct: false},
         ]
     }
 ]
@@ -47,6 +75,8 @@ function startQuiz() {
     studyButton.classList.add('hide')
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
     currentSign = 0;
+    score = 0;
+    scoreboard.innerHTML = 0;
     questionContainer.classList.remove('hide');
     setNextSign();
 }
@@ -89,6 +119,9 @@ function showSign(roadSign) {
 function selectAnswer(e) {
     const selectedOption = e.target;
     const correct = selectedOption.dataset.correct;
+    if (correct) {
+        increaseScore();
+    }
     Array.from(optionButtonElements.children).forEach(button => {
         changeOptionColor(button, button.dataset.correct);
     })
@@ -123,5 +156,10 @@ function changeOptionColor(element, correct) {
     } else {
         element.classList.add('wrong');
     }
+}
+
+function increaseScore() {
+    score++;
+    scoreboard.innerHTML = score;
 }
 
