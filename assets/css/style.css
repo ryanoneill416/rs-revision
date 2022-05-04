@@ -63,7 +63,6 @@ p {
 #sign-holder {
     width: 250px;
     height: 325px;
-    background-color: #101010;
     border-radius: 5px;
     margin: auto;
 }
@@ -121,4 +120,25 @@ p {
 
 .hide {
     display: none;
+}
+
+/* Classes to be assigned depending on shown question */
+.sign1 {
+    background-color: aqua;
+}
+
+.sign2 {
+    background-color: blue;
+}
+
+.sign3 {
+    background-color: chocolate;
+}
+
+.sign4 {
+    background-color: darkgreen;
+}
+
+.sign5 {
+    background-color: gold;
 }

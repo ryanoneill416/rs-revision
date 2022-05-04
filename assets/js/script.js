@@ -13,7 +13,7 @@ let score = 0
 
 const roadSigns = [
     {
-        sign: 'Sign 1',
+        sign: 'sign1',
         options: [
             {text: 'OptionAa', correct: true},
             {text: 'OptionBa', correct: false},
@@ -22,7 +22,7 @@ const roadSigns = [
         ]
     },
     {
-        sign: 'Sign 2',
+        sign: 'sign2',
         options: [
             {text: 'OptionAb', correct: true},
             {text: 'OptionBb', correct: false},
@@ -31,7 +31,7 @@ const roadSigns = [
         ]
     },
     {
-        sign: 'Sign 3',
+        sign: 'sign3',
         options: [
             {text: 'OptionAc', correct: true},
             {text: 'OptionBc', correct: false},
@@ -40,7 +40,7 @@ const roadSigns = [
         ]
     },
     {
-        sign: 'Sign 4',
+        sign: 'sign4',
         options: [
             {text: 'OptionAd', correct: true},
             {text: 'OptionBd', correct: false},
@@ -49,7 +49,7 @@ const roadSigns = [
         ]
     },
     {
-        sign: 'Sign 5',
+        sign: 'sign5',
         options: [
             {text: 'OptionAe', correct: true},
             {text: 'OptionBe', correct: false},
@@ -97,6 +97,7 @@ function setNextSign() {
  */
 function showSign(roadSign) {
     signPlaceholder.innerText = roadSign.sign;
+    signPlaceholder.classList.add(roadSign.sign);
     roadSign.options.forEach(option => {
         const button = document.createElement('button');
         button.innerText = option.text;
@@ -162,4 +163,3 @@ function increaseScore() {
     score++;
     scoreboard.innerHTML = score;
 }
-
