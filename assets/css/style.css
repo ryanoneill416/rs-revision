@@ -62,8 +62,8 @@ p {
 }
 
 #sign-holder {
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     border-radius: 5px;
     margin: auto;
 }
@@ -125,21 +125,31 @@ p {
 
 /* Classes to be assigned depending on shown question */
 .sign1 {
-    background-color: aqua;
+    background: url(/assets/images/sign1.webp) center center no-repeat;
+    background-size: contain;
+    border: 2px solid #101010;
 }
 
 .sign2 {
-    background-color: blue;
+    background: url(/assets/images/sign2.webp) center center no-repeat;
+    background-size: contain;
+    border: 2px solid #101010;
 }
 
 .sign3 {
-    background-color: chocolate;
+    background: url(/assets/images/sign3.webp) center center no-repeat;
+    background-size: contain;
+    border: 2px solid #101010;
 }
 
 .sign4 {
-    background-color: darkgreen;
+    background: url(/assets/images/sign4.webp) center center no-repeat;
+    background-size: contain;
+    border: 2px solid #101010;
 }
 
 .sign5 {
-    background-color: gold;
+    background: url(/assets/images/sign5.webp) center center no-repeat;
+    background-size: contain;
+    border: 2px solid #101010;
 }

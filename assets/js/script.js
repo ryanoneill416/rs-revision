@@ -97,7 +97,6 @@ function setNextSign() {
  * Bug fixed that would add class instead of replace
  */
 function showSign(roadSign) {
-    signPlaceholder.innerText = roadSign.sign;
     signPlaceholder.className = roadSign.sign;
     roadSign.options.forEach(option => {
         const button = document.createElement('button');
