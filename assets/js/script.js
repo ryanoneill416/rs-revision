@@ -94,10 +94,11 @@ function setNextSign() {
  * Sets current sign to answer
  * Makes button elements for the user to make their selection
  * Assigns correct datatype to correct answer
+ * Bug fixed that would add class instead of replace
  */
 function showSign(roadSign) {
     signPlaceholder.innerText = roadSign.sign;
-    signPlaceholder.classList.add(roadSign.sign);
+    signPlaceholder.className = roadSign.sign;
     roadSign.options.forEach(option => {
         const button = document.createElement('button');
         button.innerText = option.text;
