@@ -37,9 +37,16 @@ h2 {
     padding-bottom: 3rem;
 }
 
+h3 {
+    font-family: 'Oswald';
+    font-size: 2.5rem;
+    color: #f28500;
+    margin: 0;
+    padding: 1rem 0 .5rem 0;
+}
+
 p {
     font-size: 1.15rem;
-    color: whitesmoke;
     margin: 1rem;
 }
 
@@ -102,20 +109,30 @@ p {
     background-color: #D2042D;
 }
 
+/* Scoreboard styling */
 .endgame-area {
-    /* justify-content: center; */
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 350px;
     margin: 0 auto;
     border-radius: 10px;
     background-color: aquamarine;
+    color: #101010;
 }
 
 #end-pic {
-    width: 250px;
+    width: 350px;
     height: 200px;
-    background-color: white;
     margin: 0 auto;
+}
+
+.passpic {
+    background: url(/assets/images/pass-result.webp) center center no-repeat;
+    background-size: contain;
+}
+
+.failpic {
+    background: url(/assets/images/fail-result.webp) center center no-repeat;
+    background-size: contain;
 }
 
 .control-area {
