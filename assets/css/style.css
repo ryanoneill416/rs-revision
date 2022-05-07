@@ -103,7 +103,19 @@ p {
 }
 
 .endgame-area {
-    justify-content: center;
+    /* justify-content: center; */
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+#end-pic {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
 }
 
 .control-area {
