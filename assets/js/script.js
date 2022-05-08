@@ -1,5 +1,6 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
+const submitButton = document.getElementById('submit-btn');
 const optionButtonElements = document.getElementById('option-buttons');
 const signPlaceholder = document.getElementById('sign-holder');
 const questionContainer = document.getElementById('question-container');
@@ -10,6 +11,7 @@ const scoreboard = document.getElementById('score');
 const endGame = document.getElementById('endgame-area');
 const endHeading = document.getElementById('present-end')
 const endGamePic = document.getElementById('end-pic');
+
 let randomizedSigns;
 let currentSign;
 let score = 0
@@ -203,6 +205,14 @@ nextButton.addEventListener('click', () => {
     currentSign++;
     setNextSign();
 })
+submitButton.addEventListener('click', () => {
+    displayEndGame();
+    startButton.classList.remove('hide');
+    startButton.innerText = 'Try Again';
+    homeButton.classList.remove('hide');
+    questionContainer.classList.add('hide');
+    submitButton.classList.add('hide');
+})
 
 /**
  * The main game function which triggers the quiz to start when the user selects the 'Start' button
@@ -268,12 +278,8 @@ function selectAnswer(e) {
     if (randomizedSigns.length > currentSign + 1) {
         nextButton.classList.remove('hide');
     } else {
-        startButton.classList.remove('hide');
-        startButton.innerText = 'Restart Quiz';
         nextButton.classList.add('hide');
-        homeButton.classList.remove('hide');
-        questionContainer.classList.add('hide');
-        displayEndGame();
+        submitButton.classList.remove('hide');
     }
     nextButton.classList.add('game-btn');
     startButton.classList.add('game-btn');
