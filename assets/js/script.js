@@ -8,6 +8,8 @@ const mainMenu = document.getElementById('main-menu');
 const studyButton = document.getElementById('revision');
 const scoreboard = document.getElementById('score');
 const endGame = document.getElementById('endgame-area');
+const endHeading = document.getElementById('present-end')
+const endGamePic = document.getElementById('end-pic');
 let randomizedSigns;
 let currentSign;
 let score = 0
@@ -271,7 +273,7 @@ function selectAnswer(e) {
         nextButton.classList.add('hide');
         homeButton.classList.remove('hide');
         questionContainer.classList.add('hide');
-        endGame.classList.remove('hide');
+        displayEndGame();
     }
     nextButton.classList.add('game-btn');
     startButton.classList.add('game-btn');
@@ -298,8 +300,28 @@ function changeOptionColor(element, correct) {
     }
 }
 
+/**
+ * Increases score of user everytime a correct answer is selected
+ */
 function increaseScore() {
     score++;
     scoreboard.innerHTML = score;
     scoreboard.textContent += " / 10";
 }
+
+/**
+ * Changes what imagery and heading is displayed at the end of the quiz
+ */
+function displayEndGame() {
+    endGame.classList.remove('hide');
+    if (score <= 6) {
+        endGamePic.className = 'failpic';
+        endHeading.innerText = 'Oops!';
+    } else {
+        endGamePic.className = 'passpic';
+        endHeading.innerHTML = 'Congrats!';
+    }
+}
+
+
+  
