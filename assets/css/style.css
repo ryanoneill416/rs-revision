@@ -129,12 +129,12 @@ p {
 }
 
 .passpic {
-    background: url(/assets/images/pass-result.webp) center center no-repeat;
+    background: url(../images/pass-result.webp) center center no-repeat;
     background-size: contain;
 }
 
 .failpic {
-    background: url(/assets/images/fail-result.webp) center center no-repeat;
+    background: url(../images/fail-result.webp) center center no-repeat;
     background-size: contain;
 }
 
@@ -170,43 +170,43 @@ p {
 
 /* Classes to be assigned depending on shown question */
 .sign1 {
-    background: url(/assets/images/sign1.webp) center center no-repeat;
+    background: url(../images/sign1.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign2 {
-    background: url(/assets/images/sign2.webp) center center no-repeat;
+    background: url(../images/sign2.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign3 {
-    background: url(/assets/images/sign3.webp) center center no-repeat;
+    background: url(../images/sign3.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign4 {
-    background: url(/assets/images/sign4.webp) center center no-repeat;
+    background: url(../images/sign4.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign5 {
-    background: url(/assets/images/sign5.webp) center center no-repeat;
+    background: url(../images/sign5.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign6 {
-    background: url(/assets/images/sign6.webp) center center no-repeat;
+    background: url(../images/sign6.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign7 {
-    background: url(/assets/images/sign7.webp) center center no-repeat;
+    background: url(../images/sign7.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -218,49 +218,49 @@ p {
 }
 
 .sign9 {
-    background: url(/assets/images/sign9.webp) center center no-repeat;
+    background: url(../images/sign9.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign10 {
-    background: url(/assets/images/sign10.webp) center center no-repeat;
+    background: url(../images/sign10.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign11 {
-    background: url(/assets/images/sign11.webp) center center no-repeat;
+    background: url(../images/sign11.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign12 {
-    background: url(/assets/images/sign12.webp) center center no-repeat;
+    background: url(../images/sign12.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign13 {
-    background: url(/assets/images/sign13.webp) center center no-repeat;
+    background: url(../images/sign13.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign14 {
-    background: url(/assets/images/sign14.webp) center center no-repeat;
+    background: url(../images/sign14.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign15 {
-    background: url(/assets/images/sign15.webp) center center no-repeat;
+    background: url(../images/sign15.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sign16 {
-    background: url(/assets/images/sign16.webp) center center no-repeat;
+    background: url(../images/sign16.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -272,19 +272,19 @@ p {
 }
 
 .sign18 {
-    background: url(/assets/images/sign18.webp) center center no-repeat;
+    background: url(../images/sign18.webp) center center no-repeat;
     background-size: contain;
     border: 2px solid #101010;
 }
 
 .sign19 {
-    background: url(/assets/images/sign19.webp) center center no-repeat;
+    background: url(../images/sign19.webp) center center no-repeat;
     background-size: contain;
     border: 2px solid #101010;
 }
 
 .sign20 {
-    background: url(/assets/images/sign20.webp) center center no-repeat;
+    background: url(../images/sign20.webp) center center no-repeat;
     background-size: contain;
     border: 2px solid #101010;
 }
