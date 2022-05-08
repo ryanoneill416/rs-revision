@@ -7,6 +7,7 @@ const homeButton = document.getElementById('home-btn');
 const mainMenu = document.getElementById('main-menu');
 const studyButton = document.getElementById('revision');
 const scoreboard = document.getElementById('score');
+const endGame = document.getElementById('endgame-area');
 let randomizedSigns;
 let currentSign;
 let score = 0
@@ -102,96 +103,96 @@ const roadSigns = [
             {text: 'OptionDd', correct: false},
         ]
     },
-    {
-        sign: 'sign11',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign12',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign13',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign14',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign15',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign16',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign17',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign18',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign19',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    },
-    {
-        sign: 'sign20',
-        options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
-        ]
-    }
+    // {
+    //     sign: 'sign11',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign12',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign13',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign14',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign15',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign16',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign17',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign18',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign19',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // },
+    // {
+    //     sign: 'sign20',
+    //     options: [
+    //         {text: 'OptionAd', correct: true},
+    //         {text: 'OptionBd', correct: false},
+    //         {text: 'OptionCd', correct: false},
+    //         {text: 'OptionDd', correct: false},
+    //     ]
+    // }
 ]
 
 // learned from w3schools arrow function
@@ -266,9 +267,11 @@ function selectAnswer(e) {
     } else {
         startButton.classList.remove('hide');
         startButton.innerText = 'Restart Quiz';
+        endGame.classList.remove('hide');
         nextButton.classList.add('hide');
         homeButton.classList.remove('hide');
         questionContainer.classList.add('hide');
+
     }
     nextButton.classList.add('game-btn');
     startButton.classList.add('game-btn');
@@ -298,4 +301,5 @@ function changeOptionColor(element, correct) {
 function increaseScore() {
     score++;
     scoreboard.innerHTML = score;
+    scoreboard.textContent += " / 10";
 }

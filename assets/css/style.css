@@ -110,18 +110,20 @@ p {
 }
 
 /* Scoreboard styling */
-.endgame-area {
+#endgame-area {
     height: 500px;
     width: 350px;
     margin: 0 auto;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: #ffffff;
     color: #101010;
+    margin-bottom: 2rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 #end-pic {
-    width: 350px;
-    height: 200px;
+    width: 100%;
+    height: 275px;
     margin: 0 auto;
 }
 
@@ -133,6 +135,13 @@ p {
 .failpic {
     background: url(/assets/images/fail-result.webp) center center no-repeat;
     background-size: contain;
+}
+
+#score {
+    font-family: 'Oswald';
+    font-size: 3rem;
+    padding: 0 0 2rem 0;
+    color: #cc7000;
 }
 
 .control-area {
