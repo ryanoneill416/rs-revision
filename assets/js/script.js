@@ -208,7 +208,7 @@ nextButton.addEventListener('click', () => {
 function startQuiz() {
     startButton.classList.add('hide');
     mainMenu.classList.add('hide');
-    studyButton.classList.add('hide')
+    studyButton.classList.add('hide');
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
     currentSign = 0;
     score = 0;
@@ -245,7 +245,8 @@ function showSign(roadSign) {
         optionButtonElements.appendChild(button);
     });
     nextButton.classList.add('hide');
-    homeButton.classList.add('hide')
+    homeButton.classList.add('hide');
+    endGame.classList.add('hide');
 }
 
 /**
@@ -267,11 +268,10 @@ function selectAnswer(e) {
     } else {
         startButton.classList.remove('hide');
         startButton.innerText = 'Restart Quiz';
-        endGame.classList.remove('hide');
         nextButton.classList.add('hide');
         homeButton.classList.remove('hide');
         questionContainer.classList.add('hide');
-
+        endGame.classList.remove('hide');
     }
     nextButton.classList.add('game-btn');
     startButton.classList.add('game-btn');
