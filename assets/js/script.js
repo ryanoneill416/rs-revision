@@ -10,7 +10,8 @@ const questionContainer = document.getElementById('question-container');
 const mainMenu = document.getElementById('main-menu');
 const scoreboard = document.getElementById('score');
 const endGame = document.getElementById('endgame-area');
-const endHeading = document.getElementById('present-end')
+const endHeading = document.getElementById('present-end');
+const endSubtext = document.getElementById('subtext-end');
 const endGamePic = document.getElementById('end-pic');
 
 let randomizedSigns;
@@ -224,6 +225,7 @@ popButton.addEventListener('click', startPopQuiz);
  * The main game function which triggers the quiz to start when the user selects the 'Start' button
  */
 function startQuiz() {
+    popButton.classList.add('hide')
     startButton.classList.add('hide');
     mainMenu.classList.add('hide');
     studyButton.classList.add('hide');
@@ -350,9 +352,11 @@ function displayEndGame() {
     if (score <= (randomizedSigns.length / 1.33)) {
         endGamePic.className = 'failpic';
         endHeading.innerText = 'Oops!';
+        endSubtext.innerText = 'A little studying is needed :)'
     } else {
         endGamePic.className = 'passpic';
         endHeading.innerText = 'Congrats!';
+        endSubtext.innerText = "You're a road sign aficionado :)"
     }
 }
 
