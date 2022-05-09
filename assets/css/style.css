@@ -151,7 +151,7 @@ p {
     gap: .5rem;
 }
 
-.start-btn, .next-btn, .home-btn, .study-btn, .submit-btn {
+.start-btn, .next-btn, .home-btn, .study-btn, .submit-btn, .pop-quiz-btn {
     font-size: 1.1rem;
     padding: .75rem 0;
     margin: .5rem auto;

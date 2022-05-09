@@ -1,12 +1,13 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const submitButton = document.getElementById('submit-btn');
+const studyButton = document.getElementById('revision');
+const homeButton = document.getElementById('home-btn');
+const popButton = document.getElementById('pop-quiz-btn');
 const optionButtonElements = document.getElementById('option-buttons');
 const signPlaceholder = document.getElementById('sign-holder');
 const questionContainer = document.getElementById('question-container');
-const homeButton = document.getElementById('home-btn');
 const mainMenu = document.getElementById('main-menu');
-const studyButton = document.getElementById('revision');
 const scoreboard = document.getElementById('score');
 const endGame = document.getElementById('endgame-area');
 const endHeading = document.getElementById('present-end')
@@ -15,6 +16,7 @@ const endGamePic = document.getElementById('end-pic');
 let randomizedSigns;
 let currentSign;
 let score = 0
+let possibleScore;
 
 const roadSigns = [
     {
@@ -107,104 +109,106 @@ const roadSigns = [
             {text: 'OptionDd', correct: false},
         ]
     },
-    // {
-    //     sign: 'sign11',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign12',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign13',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign14',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign15',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign16',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign17',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign18',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign19',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // },
-    // {
-    //     sign: 'sign20',
-    //     options: [
-    //         {text: 'OptionAd', correct: true},
-    //         {text: 'OptionBd', correct: false},
-    //         {text: 'OptionCd', correct: false},
-    //         {text: 'OptionDd', correct: false},
-    //     ]
-    // }
+    {
+        sign: 'sign11',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign12',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign13',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign14',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign15',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign16',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign17',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign18',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign19',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    },
+    {
+        sign: 'sign20',
+        options: [
+            {text: 'OptionAd', correct: true},
+            {text: 'OptionBd', correct: false},
+            {text: 'OptionCd', correct: false},
+            {text: 'OptionDd', correct: false},
+        ]
+    }
 ]
 
 // learned from w3schools arrow function
+// The adding of event listeners
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
     currentSign++;
     setNextSign();
 })
+
 submitButton.addEventListener('click', () => {
     displayEndGame();
     startButton.classList.remove('hide');
@@ -214,6 +218,8 @@ submitButton.addEventListener('click', () => {
     submitButton.classList.add('hide');
 })
 
+popButton.addEventListener('click', startPopQuiz);
+
 /**
  * The main game function which triggers the quiz to start when the user selects the 'Start' button
  */
@@ -222,6 +228,24 @@ function startQuiz() {
     mainMenu.classList.add('hide');
     studyButton.classList.add('hide');
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
+    currentSign = 0;
+    score = 0;
+    scoreboard.innerHTML = 0;
+    questionContainer.classList.remove('hide');
+    setNextSign();
+}
+
+/**
+ * Another game mode selection for a user who only wants to answer half as many questions
+ * Splices randomisedsigns into an array of half the length
+ */
+function startPopQuiz() {
+    startButton.classList.add('hide');
+    popButton.classList.add('hide');
+    mainMenu.classList.add('hide');
+    studyButton.classList.add('hide');
+    randomizedSigns = roadSigns.sort(() => Math.random() - .5);
+    randomizedSigns = randomizedSigns.splice(0,10);
     currentSign = 0;
     score = 0;
     scoreboard.innerHTML = 0;
@@ -265,6 +289,7 @@ function showSign(roadSign) {
  * Adds selection function to option button
  * When the last question is answered the user will be provided with option of trying again
  * Similarly the next button will be removed
+ * Correct answer can only be pressed once to avoid inappropriate increase in score
  */
 function selectAnswer(e) {
     const selectedOption = e.target;
@@ -313,7 +338,8 @@ function changeOptionColor(element, correct) {
 function increaseScore() {
     score++;
     scoreboard.innerHTML = score;
-    scoreboard.textContent += " / 10";
+    possibleScore = randomizedSigns.length;
+    scoreboard.textContent += " / " + possibleScore;
 }
 
 /**
@@ -321,12 +347,12 @@ function increaseScore() {
  */
 function displayEndGame() {
     endGame.classList.remove('hide');
-    if (score <= 6) {
+    if (score <= (randomizedSigns.length / 1.33)) {
         endGamePic.className = 'failpic';
         endHeading.innerText = 'Oops!';
     } else {
         endGamePic.className = 'passpic';
-        endHeading.innerHTML = 'Congrats!';
+        endHeading.innerText = 'Congrats!';
     }
 }
 
