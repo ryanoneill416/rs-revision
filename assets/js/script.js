@@ -271,6 +271,7 @@ function selectAnswer(e) {
     const correct = selectedOption.dataset.correct;
     if (correct) {
         increaseScore();
+        selectedOption.disabled = true;
     }
     Array.from(optionButtonElements.children).forEach(button => {
         changeOptionColor(button, button.dataset.correct);
