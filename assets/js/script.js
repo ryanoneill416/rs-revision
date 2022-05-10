@@ -113,91 +113,91 @@ const roadSigns = [
     {
         sign: 'sign11',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'T-Junction with dual carriageway', correct: true},
+            {text: 'Motorway bridge ahead', correct: false},
+            {text: 'Level crossing ahead', correct: false},
+            {text: 'End of dual carriageway', correct: false},
         ]
     },
     {
         sign: 'sign12',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: true},
-            {text: 'OptionDd', correct: false},
+            {text: 'Forked roads', correct: false},
+            {text: 'Traffic merging ahead', correct: false},
+            {text: 'Staggered crossroads', correct: true},
+            {text: 'Dangerous corners ahead', correct: false},
         ]
     },
     {
         sign: 'sign13',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: true},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Slippery road ahead', correct: false},
+            {text: 'Dangerous bends ahead', correct: true},
+            {text: 'Country road ahead', correct: false},
+            {text: 'Speed bumps ahead', correct: false},
         ]
     },
     {
         sign: 'sign14',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: true},
+            {text: 'Pass on the left', correct: false},
+            {text: 'Turn left', correct: false},
+            {text: 'Dangerous bend', correct: false},
+            {text: 'Dangerous corner', correct: true},
         ]
     },
     {
         sign: 'sign15',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: true},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Uneven surface ahead', correct: false},
+            {text: 'Sharp dip ahead', correct: true},
+            {text: 'Skatepark ahead', correct: false},
+            {text: 'Thin road ahead', correct: false},
         ]
     },
     {
         sign: 'sign16',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Level crossing with lights', correct: true},
+            {text: 'Unguarded level crossing', correct: false},
+            {text: 'Train station ahead', correct: false},
+            {text: 'Beware of trains', correct: false},
         ]
     },
     {
         sign: 'sign17',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: true},
-            {text: 'OptionDd', correct: false},
+            {text: 'Uneven road surface', correct: false},
+            {text: 'Three hills ahead', correct: false},
+            {text: 'Series of bumps ahead', correct: true},
+            {text: 'Roadworks underway', correct: false},
         ]
     },
     {
         sign: 'sign18',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Unguarded level crossing', correct: true},
+            {text: 'Guarded level crossing', correct: false},
+            {text: 'Crossroads ahead', correct: false},
+            {text: 'Crossroads at gate ahead', correct: false},
         ]
     },
     {
         sign: 'sign19',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: true},
+            {text: 'Clearway', correct: false},
+            {text: 'Pedestrian street', correct: false},
+            {text: 'Parking not permitted', correct: false},
+            {text: 'Parking permitted during these times', correct: true},
         ]
     },
     {
         sign: 'sign20',
         options: [
-            {text: 'OptionAd', correct: false},
-            {text: 'OptionBd', correct: true},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'One way road', correct: false},
+            {text: 'No overtaking', correct: true},
+            {text: 'No double-parking', correct: false},
+            {text: 'No parking', correct: false},
         ]
     }
 ]
