@@ -1,7 +1,6 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const submitButton = document.getElementById('submit-btn');
-const studyButton = document.getElementById('revision');
 const homeButton = document.getElementById('home-btn');
 const popButton = document.getElementById('pop-quiz-btn');
 const optionButtonElements = document.getElementById('option-buttons');
@@ -228,7 +227,6 @@ function startQuiz() {
     popButton.classList.add('hide')
     startButton.classList.add('hide');
     mainMenu.classList.add('hide');
-    studyButton.classList.add('hide');
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
     currentSign = 0;
     score = 0;
@@ -245,7 +243,6 @@ function startPopQuiz() {
     startButton.classList.add('hide');
     popButton.classList.add('hide');
     mainMenu.classList.add('hide');
-    studyButton.classList.add('hide');
     randomizedSigns = roadSigns.sort(() => Math.random() - .5);
     randomizedSigns = randomizedSigns.splice(0,10);
     currentSign = 0;
