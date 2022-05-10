@@ -175,10 +175,8 @@ p {
 .foot-link:hover {
     color: rgb(17, 12, 46);
     font-size: 3rem;
-    transition: all ease-in .3s;
+    transition: all ease-in-out .3s;
 }
-
-
 
 .game-btn, .submit-btn {
     width: 200px;
