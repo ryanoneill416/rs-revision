@@ -36,16 +36,16 @@ h3 {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 1rem;
     color: #101010;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
 }
 
 /* Quiz area styling */
 #sublogo {
     color: gray;
-    margin-top: -.4rem;
+    margin-top: -.3rem;
     padding-bottom: 3rem;
     font-size: 1.33rem;
 }
@@ -84,6 +84,7 @@ p {
     padding: 1rem 0px;
     transition: all .15s ease-in-out;
     cursor: pointer;
+    font-size: 1.15rem;
 }
 
 /* ref: csstricks.com */
@@ -153,11 +154,12 @@ p {
 }
 
 .start-btn, .next-btn, .home-btn, .study-btn, .submit-btn, .pop-quiz-btn {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     padding: .75rem 0;
     margin: .5rem auto;
     width: 300px;
 }
+
 
 .foot-links {
     padding-top: 6rem;
