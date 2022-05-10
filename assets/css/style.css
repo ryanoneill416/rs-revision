@@ -5,7 +5,7 @@
     font-weight: bold;
 }
 
-/* ref: cssgradient.io */
+/* General style rules for general application */
 body {
     background: linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 50%, rgba(36,36,62,1) 100%);
     background-color: rgb(15,12,41);;
@@ -36,24 +36,24 @@ h3 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 1rem;
     color: #101010;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Quiz area styling */
 #sublogo {
     color: gray;
     margin-top: -.3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     font-size: 1.33rem;
 }
 
 .container {
     background-color: whitesmoke;
     position: absolute;
-    top: 300px;
+    top: 15vh;
     width: 750px;
     max-width: 80%;
     border-radius: 5px;
@@ -87,7 +87,6 @@ p {
     font-size: 1.15rem;
 }
 
-/* ref: csstricks.com */
 .btn:hover {
     background-color: #cc7000;
     transform: scale(1.025);
@@ -103,7 +102,7 @@ p {
     background-color: #D2042D;
 }
 
-/* Scoreboard styling */
+/* End of game div styling */
 #endgame-area {
     height: 500px;
     width: 350px;
@@ -117,11 +116,11 @@ p {
 
 #subtext-end {
     color: #101010;
-    margin: .25rem;
+    margin: .25rem auto;
 }
 
 #score {
-    margin: .25rem;
+    margin: .25rem auto; 
 }
 
 #end-pic {
@@ -147,6 +146,7 @@ p {
     color: #cc7000;
 }
 
+/* All button styling */
 .control-area {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -160,7 +160,7 @@ p {
     width: 300px;
 }
 
-
+/* footer-style div at bottom of quiz area styling */
 .foot-links {
     padding-top: 6rem;
 }
@@ -178,10 +178,7 @@ p {
     transition: all ease-in-out .3s;
 }
 
-.game-btn, .submit-btn {
-    width: 200px;
-}
-
+/* Display still to hide items */
 .hide {
     display: none;
 }
@@ -307,4 +304,154 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Media queries */
+
+@media screen and (max-width: 750px) {
+    .option-grid {
+        grid-template-columns: repeat(1, 75%);
+        justify-content: space-around;
+    }
+
+    .next-btn, .home-btn, .submit-btn {
+        width: 200px;
+    }
+
+    .start-btn, .pop-quiz-btn {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        padding: 3rem 1rem 1.5rem;
+        max-width: 90%;
+    }
+
+    .option-grid {
+        grid-template-columns: repeat(1, 85%);
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+        margin: 1rem auto;
+        width: 60%;
+    }
+
+    #sublogo {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: .75rem;
+    }
+
+    #endgame-area {
+        max-width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    h3 {
+        font-size: 2.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 1rem auto;
+        width: 75%;
+    }
+
+    #sublogo {
+        padding-bottom: 1.5rem;
+    }
+
+    .start-btn, .pop-quiz-btn {
+        width: 225px;
+    }
+
+    #endgame-area {
+        height: 450px;
+    }
+
+    #end-pic {
+        height: 200px;
+    }
+
+    #score {
+        font-size: 2.75rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .foot-links a {
+        font-size: 2.33rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    p {
+        padding-bottom: 2rem;
+        font-size: .95rem;
+        width: 90%;
+    }
+
+    .container {
+        padding: 2rem 0.5rem 1.5rem;
+        max-width: 92.5%;
+    }
+
+    #sublogo {
+        font-size: .9rem;
+        padding-bottom: .7rem;
+    }
+
+    .start-btn, .next-btn, .home-btn, .submit-btn, .pop-quiz-btn {
+        margin: 0.3rem auto;
+        width: 200px;
+    }
+
+    .option-grid {
+        margin: 20px 0 5px;
+    }
+
+    .btn {
+        font-size: .9rem;
+    }
+}
+
+@media screen and ( max-height: 940px ) {
+   .container {
+       top: 10vh;
+   }
+}
+
+@media screen and ( max-height: 760px ) {
+    .container {
+        top: 5vh;
+    }
+ }
+
+ @media screen and ( max-height: 760px ) {
+    .container {
+        top: 3vh;
+    }
+ }
+
+ @media screen and ( max-height: 670px ) {
+    .container {
+        top: 2.5vh;
+    }
+ }
 

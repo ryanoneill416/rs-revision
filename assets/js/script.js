@@ -204,7 +204,6 @@ const roadSigns = [
     }
 ];
 
-// learned from w3schools arrow function
 // The adding of event listeners
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
@@ -214,8 +213,6 @@ nextButton.addEventListener('click', () => {
 
 submitButton.addEventListener('click', () => {
     displayEndGame();
-    // startButton.classList.remove('hide');
-    // startButton.innerText = 'Try Again';
     homeButton.classList.remove('hide');
     questionContainer.classList.add('hide');
     submitButton.classList.add('hide');
