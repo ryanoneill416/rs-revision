@@ -57,9 +57,8 @@ p {
     width: 750px;
     max-width: 80%;
     border-radius: 5px;
-    padding: 3rem; 
+    padding: 3rem 3rem 1.5rem; 
     box-shadow: 0px 0px 15px 6px #000000;
-    margin-bottom: 5vh;
 }
 
 #sign-holder {
@@ -158,6 +157,23 @@ p {
     padding: .75rem 0;
     margin: .5rem auto;
     width: 300px;
+}
+
+.foot-links {
+    padding-top: 6rem;
+}
+
+.foot-links a {
+    font-size: 2.75rem;
+    color: rgba(48,43,99,1);
+    text-decoration: none;
+    margin: 0 .75rem;
+}
+
+.foot-link:hover {
+    color: rgb(17, 12, 46);
+    font-size: 3rem;
+    transition: all ease-in .3s;
 }
 
 
