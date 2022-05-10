@@ -23,91 +23,91 @@ const roadSigns = [
     {
         sign: 'sign1',
         options: [
-            {text: 'OptionAa', correct: true},
-            {text: 'OptionBa', correct: false},
-            {text: 'OptionCa', correct: false},
-            {text: 'OptionDa', correct: false},
+            {text: 'Start of obstruction', correct: true},
+            {text: 'All roads diverging', correct: false},
+            {text: 'Tunnel entrance ahead', correct: false},
+            {text: 'Road with many bends', correct: false},
         ]
     },
     {
         sign: 'sign2',
         options: [
-            {text: 'OptionAb', correct: true},
-            {text: 'OptionBb', correct: false},
-            {text: 'OptionCb', correct: false},
-            {text: 'OptionDb', correct: false},
+            {text: 'Steep incline ahead', correct: false},
+            {text: 'Continuous dips in road', correct: false},
+            {text: 'Hump or ramp', correct: true},
+            {text: 'Bend in road ahead', correct: false},
         ]
     },
     {
         sign: 'sign3',
         options: [
-            {text: 'OptionAc', correct: true},
-            {text: 'OptionBc', correct: false},
-            {text: 'OptionCc', correct: false},
-            {text: 'OptionDc', correct: false},
+            {text: 'Three-way lane split', correct: false},
+            {text: 'Lanes rejoin at crossover', correct: false},
+            {text: 'Lanes diverge at crossover', correct: true},
+            {text: 'Dangerous road junction', correct: false},
         ]
     },
     {
         sign: 'sign4',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Cul-de-sac ahead', correct: false},
+            {text: 'Offside lane closed', correct: true},
+            {text: 'Nearside lane closed', correct: false},
+            {text: 'Start of dual-carriageway', correct: false},
         ]
     },
     {
         sign: 'sign5',
         options: [
-            {text: 'OptionAe', correct: true},
-            {text: 'OptionBe', correct: false},
-            {text: 'OptionCe', correct: false},
-            {text: 'OptionDe', correct: false},
+            {text: 'Overhead electrical cables', correct: true},
+            {text: 'Car chargers ahead', correct: false},
+            {text: 'Power outage', correct: false},
+            {text: 'Electric tram lane', correct: false},
         ]
     },
     {
         sign: 'sign6',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Road closure', correct: false},
+            {text: 'No parking', correct: false},
+            {text: 'No walking', correct: false},
+            {text: 'Clearway', correct: true},
         ]
     },
     {
         sign: 'sign7',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Parking allowed', correct: false},
+            {text: 'Parking prohibited', correct: true},
+            {text: 'No pedestrians', correct: false},
+            {text: 'Pedestrianised street', correct: false},
         ]
     },
     {
         sign: 'sign8',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Start of motorway', correct: false},
+            {text: '4 Lane motorway', correct: false},
+            {text: 'Loading bay', correct: false},
+            {text: 'Max speed of 80km', correct: true},
         ]
     },
     {
         sign: 'sign9',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Road with many bends', correct: false},
+            {text: 'Dangerous corners ahead', correct: false},
+            {text: 'Slippery road', correct: true},
+            {text: 'Heavy rainfall', correct: false},
         ]
     },
     {
         sign: 'sign10',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'Single lane', correct: true},
+            {text: 'Construction work ahead', correct: false},
+            {text: 'One way traffic', correct: false},
+            {text: 'Roadworks end ahead', correct: false},
         ]
     },
     {
@@ -122,17 +122,17 @@ const roadSigns = [
     {
         sign: 'sign12',
         options: [
-            {text: 'OptionAd', correct: true},
+            {text: 'OptionAd', correct: false},
             {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
+            {text: 'OptionCd', correct: true},
             {text: 'OptionDd', correct: false},
         ]
     },
     {
         sign: 'sign13',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
+            {text: 'OptionAd', correct: false},
+            {text: 'OptionBd', correct: true},
             {text: 'OptionCd', correct: false},
             {text: 'OptionDd', correct: false},
         ]
@@ -140,17 +140,17 @@ const roadSigns = [
     {
         sign: 'sign14',
         options: [
-            {text: 'OptionAd', correct: true},
+            {text: 'OptionAd', correct: false},
             {text: 'OptionBd', correct: false},
             {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'OptionDd', correct: true},
         ]
     },
     {
         sign: 'sign15',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
+            {text: 'OptionAd', correct: false},
+            {text: 'OptionBd', correct: true},
             {text: 'OptionCd', correct: false},
             {text: 'OptionDd', correct: false},
         ]
@@ -167,9 +167,9 @@ const roadSigns = [
     {
         sign: 'sign17',
         options: [
-            {text: 'OptionAd', correct: true},
+            {text: 'OptionAd', correct: false},
             {text: 'OptionBd', correct: false},
-            {text: 'OptionCd', correct: false},
+            {text: 'OptionCd', correct: true},
             {text: 'OptionDd', correct: false},
         ]
     },
@@ -185,17 +185,17 @@ const roadSigns = [
     {
         sign: 'sign19',
         options: [
-            {text: 'OptionAd', correct: true},
+            {text: 'OptionAd', correct: false},
             {text: 'OptionBd', correct: false},
             {text: 'OptionCd', correct: false},
-            {text: 'OptionDd', correct: false},
+            {text: 'OptionDd', correct: true},
         ]
     },
     {
         sign: 'sign20',
         options: [
-            {text: 'OptionAd', correct: true},
-            {text: 'OptionBd', correct: false},
+            {text: 'OptionAd', correct: false},
+            {text: 'OptionBd', correct: true},
             {text: 'OptionCd', correct: false},
             {text: 'OptionDd', correct: false},
         ]
