@@ -16,9 +16,11 @@ const bottomLinks = document.getElementById('footlinks');
 
 let randomizedSigns;
 let currentSign;
-let score = 0
+let score = 0;
 let possibleScore;
 
+//Object contains all possible question and answers
+//Has a correct value for the correct answer
 const roadSigns = [
     {
         sign: 'sign1',
@@ -200,7 +202,7 @@ const roadSigns = [
             {text: 'No parking', correct: false},
         ]
     }
-]
+];
 
 // learned from w3schools arrow function
 // The adding of event listeners
@@ -208,16 +210,16 @@ startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
     currentSign++;
     setNextSign();
-})
+});
 
 submitButton.addEventListener('click', () => {
     displayEndGame();
-    startButton.classList.remove('hide');
-    startButton.innerText = 'Try Again';
+    // startButton.classList.remove('hide');
+    // startButton.innerText = 'Try Again';
     homeButton.classList.remove('hide');
     questionContainer.classList.add('hide');
     submitButton.classList.add('hide');
-})
+});
 
 popButton.addEventListener('click', startPopQuiz);
 
@@ -225,11 +227,11 @@ popButton.addEventListener('click', startPopQuiz);
  * The main game function which triggers the quiz to start when the user selects the 'Start' button
  */
 function startQuiz() {
-    popButton.classList.add('hide')
+    popButton.classList.add('hide');
     startButton.classList.add('hide');
     mainMenu.classList.add('hide');
     bottomLinks.classList.add('hide');
-    randomizedSigns = roadSigns.sort(() => Math.random() - .5);
+    randomizedSigns = roadSigns.sort(() => Math.random() - '.5');
     currentSign = 0;
     score = 0;
     scoreboard.innerHTML = 0;
@@ -302,7 +304,7 @@ function selectAnswer(e) {
     }
     Array.from(optionButtonElements.children).forEach(button => {
         changeOptionColor(button, button.dataset.correct);
-    })
+    });
     if (randomizedSigns.length > currentSign + 1) {
         nextButton.classList.remove('hide');
     } else {
@@ -352,11 +354,11 @@ function displayEndGame() {
     if (score <= (randomizedSigns.length / 1.33)) {
         endGamePic.className = 'failpic';
         endHeading.innerText = 'Oops!';
-        endSubtext.innerText = 'A little studying is needed :)'
+        endSubtext.innerText = 'A little studying is needed :)';
     } else {
         endGamePic.className = 'passpic';
         endHeading.innerText = 'Congrats!';
-        endSubtext.innerText = "You're a road sign aficionado :)"
+        endSubtext.innerText = "You're a road sign aficionado :)";
     }
 }
 
