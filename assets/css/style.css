@@ -117,10 +117,7 @@ p {
 #subtext-end {
     color: #101010;
     margin: .25rem auto;
-}
-
-#score {
-    margin: .25rem auto; 
+    padding-bottom: 0.75rem;
 }
 
 #end-pic {
@@ -144,6 +141,7 @@ p {
     font-size: 3rem;
     padding: 0 0 2rem 0;
     color: #cc7000;
+    margin-top: -0.5rem;
 }
 
 /* All button styling */
