@@ -13,12 +13,15 @@
     <title>Road Sign Revision</title>
 </head>
 <body>
+    <!-- Class of container which classifies quiz container -->
     <div class="container">
+        <!-- Outlines Logo and Subheading of quiz -->
         <div id="main-menu">
             <h1 id="logo">RSR</h1>
             <p id="sublogo">Road Sign Revision</p>
             <p>Test your knowledge of the trickiest road signs!</p>
         </div>
+        <!-- holds both quiz question and possible answers for users -->
         <div id="question-container" class="hide">
             <div id="sign-holder"></div>
             <div id="option-buttons" class="option-grid">
@@ -28,12 +31,14 @@
                 <button class="btn">Option 4</button>
             </div>
         </div>
+        <!-- Elements that will be shown upon completion of quiz -->
         <div id="endgame-area" class="hide">
             <h3 id="present-end"> Text will be replaced</h3>
             <p id="subtext-end"></p>
             <div id="end-pic" class="passpic"></div>
             <p id="score"></p>
         </div>
+        <!-- Control area where user can navigate the quiz and return to home -->
         <div class="control-area">
             <button id="start-btn" class="start-btn btn">Full Quiz - 20 Qs</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
@@ -41,6 +46,7 @@
             <button id="submit-btn" class="submit-btn btn hide">Submit</button>
             <button id="pop-quiz-btn" class="pop-quiz-btn btn">Pop Quiz - 10 Qs</button>
         </div>
+        <!-- Houses social links to my github and linkedin for anyone interested -->
         <div class="foot-links" id="footlinks">
             <a href="https://github.com/ryanoneill416" target="_blank" rel="noopener" aria-label="Visit my Github page (Opens in a new tab" class="foot-link">
                 <ion-icon name="logo-github"></ion-icon>
