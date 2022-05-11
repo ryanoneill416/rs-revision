@@ -195,11 +195,13 @@ Main colors used in a project:
 
 ### Scoreboard Manipulation
 
-The bug I encountered allowed the user to continually press the correct answer as they please and increase the score indefinitely. I managed to disable the correct answer after selected once but if the user selects the correct answer after guessing the wrong answer already, the score will still increase. Due to time constraints I was'nt able to amend the bug as adequate research is required due to my lack of experience in javascript at the moment. I am committed to amending this bug as soon as grading is complete.
+The bug I encountered allowed the user to continually press the correct answer as they please and increase the score indefinitely. Initially I managed to disable the correct answer after selected once but if the user selects the correct answer after guessing the wrong answer already, the score will still increase.
+To amend this bug I added into the function that targets the array of buttons, to disable every button in option grid when an answer is targeted.
 
 ### Responsiveness Inadequacy
 
-Throughout the development process I housed the header above the quiz container however I realised this would be detrimental to the responsiveness of the quiz for mobile devices. To fix this I opted for a simplistic design with a housed header element and this in turn, ensured absolute responsivity for the application.
+Throughout the development process I housed the header above the quiz container however I realised this would be detrimental to the responsiveness of the quiz for mobile devices. 
+To fix this I opted for a simplistic design with a housed header element and this in turn, ensured absolute responsivity for the application.
 
 ---
 ## Performance testing
