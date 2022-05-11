@@ -247,7 +247,7 @@ function startPopQuiz() {
     popButton.classList.add('hide');
     mainMenu.classList.add('hide');
     bottomLinks.classList.add('hide');
-    randomizedSigns = roadSigns.sort(() => Math.random() - '.5');
+    randomizedSigns = roadSigns.sort(() => Math.random() - (.5));
     randomizedSigns = randomizedSigns.splice(0,10);
     currentSign = 0;
     score = 0;
@@ -299,10 +299,11 @@ function selectAnswer(e) {
     const correct = selectedOption.dataset.correct;
     if (correct) {
         increaseScore();
-        selectedOption.disabled = true;
+        // selectedOption.disabled = true;
     }
     Array.from(optionButtonElements.children).forEach(button => {
         changeOptionColor(button, button.dataset.correct);
+        button.disabled = true;
     });
     if (randomizedSigns.length > currentSign + 1) {
         nextButton.classList.remove('hide');
