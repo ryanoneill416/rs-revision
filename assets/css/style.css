@@ -227,7 +227,7 @@ p {
 }
 
 .sign8 {
-    background: url(/assets/images/sign8.webp) center center no-repeat;
+    background: url(../images/sign8.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -281,7 +281,7 @@ p {
 }
 
 .sign17 {
-    background: url(/assets/images/sign17.webp) center center no-repeat;
+    background: url(../images/sign17.webp) center center no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
