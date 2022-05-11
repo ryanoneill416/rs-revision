@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+
+
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const submitButton = document.getElementById('submit-btn');
@@ -245,7 +248,7 @@ function startPopQuiz() {
     popButton.classList.add('hide');
     mainMenu.classList.add('hide');
     bottomLinks.classList.add('hide');
-    randomizedSigns = roadSigns.sort(() => Math.random() - .5);
+    randomizedSigns = roadSigns.sort(() => Math.random() - '.5');
     randomizedSigns = randomizedSigns.splice(0,10);
     currentSign = 0;
     score = 0;

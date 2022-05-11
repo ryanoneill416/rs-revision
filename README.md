@@ -69,6 +69,12 @@ Road Sign Revision is an interactive learning environment for those who are lear
     - The title will display 'Oops'.
     - The subheading will display 'A little more studying is needed'.
     - The picture displayed will be someone studying.
-  - At the bottom of the div the user's score will be presented as the score compared to the possible score.
+    - At the bottom of the div the user's score will be presented as the score compared to the possible score.
 
 ![End Game Showcase Fail](/assets/media/rsr-end-game-fail.webp)
+
+- __Home Button__
+  - The home button is presented below the End-Game showcase.
+  - It is shown at the end of the quiz to guide the user back to the main menu.
+
+![Home Button](/assets/media/rsr-home-btn.webp)
