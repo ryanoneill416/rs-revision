@@ -4,7 +4,21 @@ Road Sign Revision is an interactive learning environment for those who are lear
 
 ![Responsiveness Mockup](/assets/media/rsr-mockups.webp)
 
+---
+## User Stories
 
+### As a new user:
+* I would like to know what the application is for in a simplistic and easily understood manner.
+* I want to know what my call to action is when I wish to begin the quiz.
+* I want the application to be a reliable learning resource that is both functional and intuitive.
+* I want the application to be easily operated with conventional functions.
+* I want to visit the creators Github and LinkedIn if interested.
+
+### As a returning user:
+* I want the application to be simply laid out for revisitation and continual use.
+* I want the time to begin the application to be short and not drawn-out so it can be used as a functional and efficient resource.
+* I want the option of taking a shorter quiz if time is a restriction or to take a full assessment to validate my knowledge on the subject.
+* I want to be able to view the creators Github and LinkedIn if interested.
 ---
 ## Home Page Features
 
@@ -105,6 +119,20 @@ Road Sign Revision is an interactive learning environment for those who are lear
 
 ![Home Button](/assets/media/rsr-home-btn.webp)
 
+--
+## Surface
+
+### Colors
+Main colors used in a project:
+* Background: rgba(48,43,99,1).
+* Font: ##101010 and whitesmoke.
+* Headings: #f28500 and rgba(48,43,99,1).
+
+### Fonts 
+
+* Headings: Noto Serif and Oswald, with a backup of Sans-serif.
+* Paragraph Elements: Source Sans Pro with a backup of Sans-serif.
+
 ---
 # Technologies Used
 
@@ -145,7 +173,7 @@ Road Sign Revision is an interactive learning environment for those who are lear
 * As an image editor.
 
 ---
-## Functionality testing 
+# Functionality testing 
 
  I used Chrome dev tools to identify the potential problems in terms of responsive from teh very beginning of this project. This allowed me to plan accordingly and ensure that I used programming principles to avoid an absurd amount of media queries.
 
@@ -201,3 +229,44 @@ See the results below in the same order:
 
 ---
 ![JS Validation](./assets/media/rsr-js-val.webp)
+
+
+___
+# Deployment
+
+The Road Sign Revision web application is deployed using GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system.
+I used push command in Gitpod to save changes into GitHub.
+
+To deploy the website I had to do the following:
+
+* Log in to GitHub and click on repository to deploy ([pp2-roadsignrevision](https://ryanoneill416.github.io/pp2-roadsignrevision/)).
+* Select the `Settings` tab and find GitHub Pages option at the bottom of the page.
+* From branch select `main` and then `/(root)` as the directory.
+* Click `Save` and the website was deployed after refreshing the page and giving github a few moments to process said request.
+>  Your site is published at https://ryanoneill416.github.io/pp2-roadsignrevision/
+
+To run locally:
+* Log in to GitHub and click on repository to download ([pp2-roadsignrevision](https://ryanoneill416.github.io/pp2-roadsignrevision/)).
+* Select `Code` and click Download the ZIP file.
+* After this is downloaded, the file can be extracted and ran in your chosen local environment :)
+
+___
+# Credits
+
+## Template Usage
+
+ To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+
+## Ideas and learning resources:
+
+    * [w3schools.com](https://www.w3schools.com) for learning Arrow Functions in JS.
+
+    * [cssgradient.io](https://cssgradient.io/) for background gradient generation and customisation.
+
+## Irish Road Signs:
+* [Official RSA Road Signs](https://ladybirddrivingschool.ie/road-signs-ireland/)
+
+## End-Game Picture Design
+* [Pch.vector at Freepik.com](https://www.freepik.com/pch-vector)
+
