@@ -4,7 +4,7 @@ Road Sign Revision is an interactive learning environment for those who are lear
 
 ![Responsiveness Mockup](/assets/media/rsr-mockups.webp)
 
-## [View the deployed website here!](https://ryanoneill416.github.io/pp2-roadsignrevision/)
+## [View the deployed website here!](https://ryanoneill416.github.io/rs-revision/)
 ---
 ## User Stories
 
